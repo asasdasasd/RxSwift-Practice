@@ -10,33 +10,39 @@ import UIKit
 import RxCocoa
 import RxSwift
 
-class SimpleTableViewController: UIViewController {
+
+
+class SimpleTableViewController: ViewController,UITableViewDelegate {
 
     @IBOutlet weak var tableview: UITableView!
+    
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        let items = Observable.just((0..<20).map({"\($0)"}))
-        
+        let items = Observable.just(
+            (0..<20).map { "\($0)" }
+        )
+
         items
-            .bindTo(tableview.rx.items(cellIdentifier: "Cell", cellType: UITableViewCell.self)){ (row,element,cell) in
-            cell.textLabel?.text = "\(element) row --- \(row)"
+            .bindTo(tableview.rx.items(cellIdentifier: "Cell", cellType: UITableViewCell.self)) { (row, element, cell) in
+                cell.textLabel?.text = "\(element) @ row \(row)"
             }
-            .disposed(by: DisposeBag())
+            .disposed(by: disposebag)
+        
         
         tableview.rx
             .modelSelected(String.self)
-            .subscribe(onNext: { value in
-            
-                print("Tapped \(value)")
+            .subscribe(onNext:  { value in
+                print("tapped \(value)")
             })
-            .disposed(by: DisposeBag())
+            .disposed(by: disposebag)
         
         tableview.rx
-        .itemAccessoryButtonTapped
-        .subscribe(onNext: { (indexPath) in
-            print("Tapped Detail \(indexPath.section) \(indexPath.row)")
-        })
-        .disposed(by: DisposeBag())
+            .itemAccessoryButtonTapped
+            .subscribe(onNext: { indexPath in
+                print("tapped detail @\(indexPath.section), \(indexPath.row)")
+            })
+            .disposed(by: disposebag)
     }
 
     override func didReceiveMemoryWarning() {
