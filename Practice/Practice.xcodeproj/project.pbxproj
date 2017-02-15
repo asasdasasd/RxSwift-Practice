@@ -34,6 +34,12 @@
 		6415017C1E52D96600FBC362 /* RxTableViewSectionedReloadDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 641501631E52D96600FBC362 /* RxTableViewSectionedReloadDataSource.swift */; };
 		6415017D1E52D96600FBC362 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 641501641E52D96600FBC362 /* README.md */; };
 		6415017F1E52DE5500FBC362 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6415017E1E52DE5500FBC362 /* ViewController.swift */; };
+		644227401E5436CE007D47E5 /* PartialUpdates.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6442273E1E5436CE007D47E5 /* PartialUpdates.storyboard */; };
+		644227421E5439A1007D47E5 /* NumberSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 644227411E5439A1007D47E5 /* NumberSectionView.swift */; };
+		644227441E543AF1007D47E5 /* NumberCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 644227431E543AF1007D47E5 /* NumberCell.swift */; };
+		644227461E543B6E007D47E5 /* PartialUpdatesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 644227451E543B6E007D47E5 /* PartialUpdatesViewController.swift */; };
+		644227481E543D7A007D47E5 /* PseudoRandomGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 644227471E543D7A007D47E5 /* PseudoRandomGenerator.swift */; };
+		6442274A1E544002007D47E5 /* Randomizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 644227491E544002007D47E5 /* Randomizer.swift */; };
 		649E1C151E4C5D1A006CF0CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649E1C141E4C5D1A006CF0CE /* AppDelegate.swift */; };
 		649E1C1A1E4C5D1A006CF0CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 649E1C181E4C5D1A006CF0CE /* Main.storyboard */; };
 		649E1C1C1E4C5D1A006CF0CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 649E1C1B1E4C5D1A006CF0CE /* Assets.xcassets */; };
@@ -92,6 +98,12 @@
 		641501631E52D96600FBC362 /* RxTableViewSectionedReloadDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxTableViewSectionedReloadDataSource.swift; sourceTree = "<group>"; };
 		641501641E52D96600FBC362 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		6415017E1E52DE5500FBC362 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6442273F1E5436CE007D47E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/PartialUpdates.storyboard; sourceTree = "<group>"; };
+		644227411E5439A1007D47E5 /* NumberSectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberSectionView.swift; sourceTree = "<group>"; };
+		644227431E543AF1007D47E5 /* NumberCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberCell.swift; sourceTree = "<group>"; };
+		644227451E543B6E007D47E5 /* PartialUpdatesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PartialUpdatesViewController.swift; sourceTree = "<group>"; };
+		644227471E543D7A007D47E5 /* PseudoRandomGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PseudoRandomGenerator.swift; sourceTree = "<group>"; };
+		644227491E544002007D47E5 /* Randomizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Randomizer.swift; sourceTree = "<group>"; };
 		649E1C111E4C5D1A006CF0CE /* Practice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Practice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		649E1C141E4C5D1A006CF0CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		649E1C191E4C5D1A006CF0CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -194,6 +206,19 @@
 			path = "DataSources+Rx";
 			sourceTree = "<group>";
 		};
+		6442273D1E5435D3007D47E5 /* TableViewPartialUpdates */ = {
+			isa = PBXGroup;
+			children = (
+				6442273E1E5436CE007D47E5 /* PartialUpdates.storyboard */,
+				644227411E5439A1007D47E5 /* NumberSectionView.swift */,
+				644227451E543B6E007D47E5 /* PartialUpdatesViewController.swift */,
+				644227431E543AF1007D47E5 /* NumberCell.swift */,
+				644227471E543D7A007D47E5 /* PseudoRandomGenerator.swift */,
+				644227491E544002007D47E5 /* Randomizer.swift */,
+			);
+			name = TableViewPartialUpdates;
+			sourceTree = "<group>";
+		};
 		649E1C081E4C5D1A006CF0CE = {
 			isa = PBXGroup;
 			children = (
@@ -219,6 +244,7 @@
 		649E1C131E4C5D1A006CF0CE /* Practice */ = {
 			isa = PBXGroup;
 			children = (
+				6442273D1E5435D3007D47E5 /* TableViewPartialUpdates */,
 				641501491E52D96600FBC362 /* RxDataSources */,
 				641501461E52D6B500FBC362 /* SimpleTableViewSectioned */,
 				649E1C421E4C5FCC006CF0CE /* SimpleTableView */,
@@ -387,6 +413,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				649E1C1F1E4C5D1A006CF0CE /* LaunchScreen.storyboard in Resources */,
+				644227401E5436CE007D47E5 /* PartialUpdates.storyboard in Resources */,
 				649E1C1C1E4C5D1A006CF0CE /* Assets.xcassets in Resources */,
 				649E1C4E1E4C641B006CF0CE /* SimpleTableView.storyboard in Resources */,
 				649E1C4C1E4C63D4006CF0CE /* SimpleTableViewSectioned.storyboard in Resources */,
@@ -470,6 +497,7 @@
 				641501671E52D96600FBC362 /* AnimatableSectionModelType.swift in Sources */,
 				6415016F1E52D96600FBC362 /* IdentifiableType.swift in Sources */,
 				649E1C461E4C6074006CF0CE /* SimpleTableViewController.swift in Sources */,
+				644227441E543AF1007D47E5 /* NumberCell.swift in Sources */,
 				641501781E52D96600FBC362 /* UI+SectionedViewType.swift in Sources */,
 				641501481E52D75D00FBC362 /* SimpleTableViewSectionedController.swift in Sources */,
 				641501741E52D96600FBC362 /* SectionModel.swift in Sources */,
@@ -478,6 +506,8 @@
 				641501731E52D96600FBC362 /* Optional+Extensions.swift in Sources */,
 				641501751E52D96600FBC362 /* SectionModelType.swift in Sources */,
 				6415016E1E52D96600FBC362 /* FloatingPointType+IdentifiableType.swift in Sources */,
+				6442274A1E544002007D47E5 /* Randomizer.swift in Sources */,
+				644227481E543D7A007D47E5 /* PseudoRandomGenerator.swift in Sources */,
 				6415016C1E52D96600FBC362 /* DataSources.swift in Sources */,
 				641501761E52D96600FBC362 /* String+IdentifiableType.swift in Sources */,
 				6415017B1E52D96600FBC362 /* RxTableViewSectionedAnimatedDataSource.swift in Sources */,
@@ -489,9 +519,11 @@
 				649E1C151E4C5D1A006CF0CE /* AppDelegate.swift in Sources */,
 				641501651E52D96600FBC362 /* AnimatableSectionModel.swift in Sources */,
 				641501681E52D96600FBC362 /* AnimationConfiguration.swift in Sources */,
+				644227461E543B6E007D47E5 /* PartialUpdatesViewController.swift in Sources */,
 				641501661E52D96600FBC362 /* AnimatableSectionModelType+ItemPath.swift in Sources */,
 				641501721E52D96600FBC362 /* ItemPath.swift in Sources */,
 				6415016A1E52D96600FBC362 /* Changeset.swift in Sources */,
+				644227421E5439A1007D47E5 /* NumberSectionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -527,6 +559,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		6442273E1E5436CE007D47E5 /* PartialUpdates.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6442273F1E5436CE007D47E5 /* Base */,
+			);
+			name = PartialUpdates.storyboard;
+			sourceTree = "<group>";
+		};
 		649E1C181E4C5D1A006CF0CE /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
