@@ -60,7 +60,7 @@
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
-                                <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="ZQZ-I8-sy5" customClass="NumberSectionView" customModule="Practice" customModuleProvider="target">
+                                <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Section" id="ZQZ-I8-sy5" customClass="NumberSectionView" customModule="Practice" customModuleProvider="target">
                                     <rect key="frame" x="0.0" y="0.0" width="125" height="37"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
@@ -102,7 +102,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="krn-hD-Pib">
-                        <barButtonItem key="rightBarButtonItem" title="Randomize" id="Usk-zm-efa"/>
+                        <barButtonItem key="rightBarButtonItem" title="Randomize" id="Usk-zm-efa">
+                            <connections>
+                                <action selector="randomize:" destination="Dze-oE-eJU" id="N0a-HO-EeA"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
