@@ -54,10 +54,10 @@
             </objects>
             <point key="canvasLocation" x="1942" y="208"/>
         </scene>
-        <!--View Controller-->
+        <!--Detail View Controller-->
         <scene sceneID="8uv-Ip-Rlp">
             <objects>
-                <viewController id="sFg-UR-USe" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DetailViewController" id="sFg-UR-USe" customClass="DetailViewController" customModule="Practice" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="LLO-GW-CFq"/>
                         <viewControllerLayoutGuide type="bottom" id="G5j-rK-rIt"/>
@@ -88,6 +88,10 @@
                             <constraint firstItem="jXw-LB-WXI" firstAttribute="top" secondItem="LLO-GW-CFq" secondAttribute="bottom" constant="107" id="fZz-aU-fMf"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="imageView" destination="jXw-LB-WXI" id="dGd-3O-MF6"/>
+                        <outlet property="label" destination="HBT-gw-md9" id="pgk-dX-yNR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zM8-xD-kxw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
