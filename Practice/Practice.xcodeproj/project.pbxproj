@@ -52,6 +52,9 @@
 		64F0FC501E56C4A60032A162 /* TableViewWithEditingCommands.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64F0FC4F1E56C4A60032A162 /* TableViewWithEditingCommands.storyboard */; };
 		64F0FC531E56C4E20032A162 /* TableViewWithEditingCommandsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F0FC521E56C4E20032A162 /* TableViewWithEditingCommandsController.swift */; };
 		64F0FC551E56C5620032A162 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F0FC541E56C5620032A162 /* DetailViewController.swift */; };
+		64F0FC571E56C6DE0032A162 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F0FC561E56C6DE0032A162 /* User.swift */; };
+		64F0FC591E56C8F60032A162 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F0FC581E56C8F60032A162 /* UIImageView+Extension.swift */; };
+		64F0FC5B1E56C97F0032A162 /* RandomUserAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F0FC5A1E56C97F0032A162 /* RandomUserAPI.swift */; };
 		C622E67A6230A0BB16CB9408 /* Pods_Practice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 702223212D67C8404548290A /* Pods_Practice.framework */; };
 /* End PBXBuildFile section */
 
@@ -125,6 +128,9 @@
 		64F0FC4F1E56C4A60032A162 /* TableViewWithEditingCommands.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TableViewWithEditingCommands.storyboard; sourceTree = "<group>"; };
 		64F0FC521E56C4E20032A162 /* TableViewWithEditingCommandsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewWithEditingCommandsController.swift; sourceTree = "<group>"; };
 		64F0FC541E56C5620032A162 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		64F0FC561E56C6DE0032A162 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		64F0FC581E56C8F60032A162 /* UIImageView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
+		64F0FC5A1E56C97F0032A162 /* RandomUserAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomUserAPI.swift; sourceTree = "<group>"; };
 		702223212D67C8404548290A /* Pods_Practice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Practice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAD678EEC4A8768DF8EE3C92 /* Pods-Practice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Practice.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Practice/Pods-Practice.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -298,6 +304,9 @@
 				64F0FC4F1E56C4A60032A162 /* TableViewWithEditingCommands.storyboard */,
 				64F0FC521E56C4E20032A162 /* TableViewWithEditingCommandsController.swift */,
 				64F0FC541E56C5620032A162 /* DetailViewController.swift */,
+				64F0FC561E56C6DE0032A162 /* User.swift */,
+				64F0FC581E56C8F60032A162 /* UIImageView+Extension.swift */,
+				64F0FC5A1E56C97F0032A162 /* RandomUserAPI.swift */,
 			);
 			name = TableViewWithEditingCommands;
 			sourceTree = "<group>";
@@ -524,6 +533,7 @@
 				641501791E52D96600FBC362 /* RxCollectionViewSectionedAnimatedDataSource.swift in Sources */,
 				641501731E52D96600FBC362 /* Optional+Extensions.swift in Sources */,
 				641501751E52D96600FBC362 /* SectionModelType.swift in Sources */,
+				64F0FC591E56C8F60032A162 /* UIImageView+Extension.swift in Sources */,
 				6415016E1E52D96600FBC362 /* FloatingPointType+IdentifiableType.swift in Sources */,
 				6442274A1E544002007D47E5 /* Randomizer.swift in Sources */,
 				644227481E543D7A007D47E5 /* PseudoRandomGenerator.swift in Sources */,
@@ -531,11 +541,13 @@
 				641501761E52D96600FBC362 /* String+IdentifiableType.swift in Sources */,
 				6415017B1E52D96600FBC362 /* RxTableViewSectionedAnimatedDataSource.swift in Sources */,
 				641501701E52D96600FBC362 /* IdentifiableValue.swift in Sources */,
+				64F0FC571E56C6DE0032A162 /* User.swift in Sources */,
 				6415017C1E52D96600FBC362 /* RxTableViewSectionedReloadDataSource.swift in Sources */,
 				6415017F1E52DE5500FBC362 /* ViewController.swift in Sources */,
 				641501691E52D96600FBC362 /* Array+Extensions.swift in Sources */,
 				641501771E52D96600FBC362 /* TableViewSectionedDataSource.swift in Sources */,
 				64F0FC551E56C5620032A162 /* DetailViewController.swift in Sources */,
+				64F0FC5B1E56C97F0032A162 /* RandomUserAPI.swift in Sources */,
 				649E1C151E4C5D1A006CF0CE /* AppDelegate.swift in Sources */,
 				641501651E52D96600FBC362 /* AnimatableSectionModel.swift in Sources */,
 				641501681E52D96600FBC362 /* AnimationConfiguration.swift in Sources */,
