@@ -7,13 +7,34 @@
 //
 
 import UIKit
+import RxSwift
 
-class DetailViewController: UIViewController {
+class DetailViewController: ViewController {
 
+    
+    @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var label: UILabel!
+    
+    var user: User!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        imageView.makeRoundedCorners(40)
+        
+        let url = URL(string: user.imageURL)!
+        let request = URLRequest(url: url)
+        
+        URLSession.shared.rx.data(request: request)
+            .map { data in
+                UIImage(data: data)
+            }
+            .observeOn(MainScheduler.instance)
+            .subscribe(imageView.rx.image)
+            .disposed(by: disposebag)
+        
+        label.text = user.firstName + " " + user.lastName
+        
     }
 
     override func didReceiveMemoryWarning() {
