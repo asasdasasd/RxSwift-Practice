@@ -40,6 +40,8 @@
 		644227461E543B6E007D47E5 /* PartialUpdatesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 644227451E543B6E007D47E5 /* PartialUpdatesViewController.swift */; };
 		644227481E543D7A007D47E5 /* PseudoRandomGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 644227471E543D7A007D47E5 /* PseudoRandomGenerator.swift */; };
 		6442274A1E544002007D47E5 /* Randomizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 644227491E544002007D47E5 /* Randomizer.swift */; };
+		6449EB311E6D371900508428 /* Number.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6449EB301E6D371900508428 /* Number.storyboard */; };
+		6449EB341E6D376D00508428 /* NumbersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6449EB331E6D376D00508428 /* NumbersViewController.swift */; };
 		649E1C151E4C5D1A006CF0CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649E1C141E4C5D1A006CF0CE /* AppDelegate.swift */; };
 		649E1C1A1E4C5D1A006CF0CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 649E1C181E4C5D1A006CF0CE /* Main.storyboard */; };
 		649E1C1C1E4C5D1A006CF0CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 649E1C1B1E4C5D1A006CF0CE /* Assets.xcassets */; };
@@ -110,6 +112,8 @@
 		644227451E543B6E007D47E5 /* PartialUpdatesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PartialUpdatesViewController.swift; sourceTree = "<group>"; };
 		644227471E543D7A007D47E5 /* PseudoRandomGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PseudoRandomGenerator.swift; sourceTree = "<group>"; };
 		644227491E544002007D47E5 /* Randomizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Randomizer.swift; sourceTree = "<group>"; };
+		6449EB301E6D371900508428 /* Number.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Number.storyboard; sourceTree = "<group>"; };
+		6449EB331E6D376D00508428 /* NumbersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumbersViewController.swift; sourceTree = "<group>"; };
 		649E1C111E4C5D1A006CF0CE /* Practice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Practice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		649E1C141E4C5D1A006CF0CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		649E1C191E4C5D1A006CF0CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -231,6 +235,15 @@
 			name = TableViewPartialUpdates;
 			sourceTree = "<group>";
 		};
+		6449EB321E6D373600508428 /* Number */ = {
+			isa = PBXGroup;
+			children = (
+				6449EB301E6D371900508428 /* Number.storyboard */,
+				6449EB331E6D376D00508428 /* NumbersViewController.swift */,
+			);
+			name = Number;
+			sourceTree = "<group>";
+		};
 		649E1C081E4C5D1A006CF0CE = {
 			isa = PBXGroup;
 			children = (
@@ -256,6 +269,7 @@
 		649E1C131E4C5D1A006CF0CE /* Practice */ = {
 			isa = PBXGroup;
 			children = (
+				6449EB321E6D373600508428 /* Number */,
 				64F0FC511E56C4B60032A162 /* TableViewWithEditingCommands */,
 				6442273D1E5435D3007D47E5 /* TableViewPartialUpdates */,
 				641501491E52D96600FBC362 /* RxDataSources */,
@@ -439,6 +453,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				64F0FC501E56C4A60032A162 /* TableViewWithEditingCommands.storyboard in Resources */,
+				6449EB311E6D371900508428 /* Number.storyboard in Resources */,
 				649E1C1F1E4C5D1A006CF0CE /* LaunchScreen.storyboard in Resources */,
 				644227401E5436CE007D47E5 /* PartialUpdates.storyboard in Resources */,
 				649E1C1C1E4C5D1A006CF0CE /* Assets.xcassets in Resources */,
@@ -518,6 +533,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6415016B1E52D96600FBC362 /* CollectionViewSectionedDataSource.swift in Sources */,
+				6449EB341E6D376D00508428 /* NumbersViewController.swift in Sources */,
 				6415017A1E52D96600FBC362 /* RxCollectionViewSectionedReloadDataSource.swift in Sources */,
 				6415016D1E52D96600FBC362 /* Differentiator.swift in Sources */,
 				64F0FC531E56C4E20032A162 /* TableViewWithEditingCommandsController.swift in Sources */,
