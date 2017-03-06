@@ -176,6 +176,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="ZOc-Tw-vBH" kind="push" id="eYm-2U-9as"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="qja-Mm-BFz">
                                         <rect key="frame" x="0.0" y="352" width="375" height="44"/>
@@ -292,7 +295,26 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FlD-ny-63c" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1978" y="340"/>
+            <point key="canvasLocation" x="1745" y="18"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="OHc-wn-cqq">
+            <objects>
+                <viewController id="ZOc-Tw-vBH" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="kwu-kH-2DN"/>
+                        <viewControllerLayoutGuide type="bottom" id="Y5x-Ma-DEA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="67q-W3-wIn">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="BS2-Xz-DUs"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wcr-bp-xK6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1977" y="250"/>
         </scene>
     </scenes>
 </document>
