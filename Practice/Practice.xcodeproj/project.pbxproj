@@ -42,6 +42,8 @@
 		6442274A1E544002007D47E5 /* Randomizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 644227491E544002007D47E5 /* Randomizer.swift */; };
 		6449EB311E6D371900508428 /* Number.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6449EB301E6D371900508428 /* Number.storyboard */; };
 		6449EB341E6D376D00508428 /* NumbersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6449EB331E6D376D00508428 /* NumbersViewController.swift */; };
+		6449EB3A1E6D3D8500508428 /* Validation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6449EB391E6D3D8500508428 /* Validation.storyboard */; };
+		6449EB3D1E6D3DAD00508428 /* ValidationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6449EB3C1E6D3DAD00508428 /* ValidationViewController.swift */; };
 		649E1C151E4C5D1A006CF0CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649E1C141E4C5D1A006CF0CE /* AppDelegate.swift */; };
 		649E1C1A1E4C5D1A006CF0CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 649E1C181E4C5D1A006CF0CE /* Main.storyboard */; };
 		649E1C1C1E4C5D1A006CF0CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 649E1C1B1E4C5D1A006CF0CE /* Assets.xcassets */; };
@@ -114,6 +116,8 @@
 		644227491E544002007D47E5 /* Randomizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Randomizer.swift; sourceTree = "<group>"; };
 		6449EB301E6D371900508428 /* Number.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Number.storyboard; sourceTree = "<group>"; };
 		6449EB331E6D376D00508428 /* NumbersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumbersViewController.swift; sourceTree = "<group>"; };
+		6449EB391E6D3D8500508428 /* Validation.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Validation.storyboard; sourceTree = "<group>"; };
+		6449EB3C1E6D3DAD00508428 /* ValidationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidationViewController.swift; sourceTree = "<group>"; };
 		649E1C111E4C5D1A006CF0CE /* Practice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Practice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		649E1C141E4C5D1A006CF0CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		649E1C191E4C5D1A006CF0CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -244,6 +248,15 @@
 			name = Number;
 			sourceTree = "<group>";
 		};
+		6449EB3B1E6D3D8C00508428 /* Validation */ = {
+			isa = PBXGroup;
+			children = (
+				6449EB391E6D3D8500508428 /* Validation.storyboard */,
+				6449EB3C1E6D3DAD00508428 /* ValidationViewController.swift */,
+			);
+			name = Validation;
+			sourceTree = "<group>";
+		};
 		649E1C081E4C5D1A006CF0CE = {
 			isa = PBXGroup;
 			children = (
@@ -269,6 +282,7 @@
 		649E1C131E4C5D1A006CF0CE /* Practice */ = {
 			isa = PBXGroup;
 			children = (
+				6449EB3B1E6D3D8C00508428 /* Validation */,
 				6449EB321E6D373600508428 /* Number */,
 				64F0FC511E56C4B60032A162 /* TableViewWithEditingCommands */,
 				6442273D1E5435D3007D47E5 /* TableViewPartialUpdates */,
@@ -453,6 +467,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				64F0FC501E56C4A60032A162 /* TableViewWithEditingCommands.storyboard in Resources */,
+				6449EB3A1E6D3D8500508428 /* Validation.storyboard in Resources */,
 				6449EB311E6D371900508428 /* Number.storyboard in Resources */,
 				649E1C1F1E4C5D1A006CF0CE /* LaunchScreen.storyboard in Resources */,
 				644227401E5436CE007D47E5 /* PartialUpdates.storyboard in Resources */,
@@ -562,6 +577,7 @@
 				6415017F1E52DE5500FBC362 /* ViewController.swift in Sources */,
 				641501691E52D96600FBC362 /* Array+Extensions.swift in Sources */,
 				641501771E52D96600FBC362 /* TableViewSectionedDataSource.swift in Sources */,
+				6449EB3D1E6D3DAD00508428 /* ValidationViewController.swift in Sources */,
 				64F0FC551E56C5620032A162 /* DetailViewController.swift in Sources */,
 				64F0FC5B1E56C97F0032A162 /* RandomUserAPI.swift in Sources */,
 				649E1C151E4C5D1A006CF0CE /* AppDelegate.swift in Sources */,
