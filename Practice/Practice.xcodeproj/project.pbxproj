@@ -53,6 +53,8 @@
 		649E1C461E4C6074006CF0CE /* SimpleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649E1C451E4C6074006CF0CE /* SimpleTableViewController.swift */; };
 		649E1C4C1E4C63D4006CF0CE /* SimpleTableViewSectioned.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 649E1C4B1E4C63D4006CF0CE /* SimpleTableViewSectioned.storyboard */; };
 		649E1C4E1E4C641B006CF0CE /* SimpleTableView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 649E1C4D1E4C641B006CF0CE /* SimpleTableView.storyboard */; };
+		64B32C741E6D535000512850 /* Location.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64B32C721E6D535000512850 /* Location.storyboard */; };
+		64B32C771E6D548200512850 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B32C761E6D548200512850 /* LocationViewController.swift */; };
 		64F0FC501E56C4A60032A162 /* TableViewWithEditingCommands.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64F0FC4F1E56C4A60032A162 /* TableViewWithEditingCommands.storyboard */; };
 		64F0FC531E56C4E20032A162 /* TableViewWithEditingCommandsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F0FC521E56C4E20032A162 /* TableViewWithEditingCommandsController.swift */; };
 		64F0FC551E56C5620032A162 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F0FC541E56C5620032A162 /* DetailViewController.swift */; };
@@ -133,6 +135,8 @@
 		649E1C451E4C6074006CF0CE /* SimpleTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleTableViewController.swift; sourceTree = "<group>"; };
 		649E1C4B1E4C63D4006CF0CE /* SimpleTableViewSectioned.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SimpleTableViewSectioned.storyboard; sourceTree = "<group>"; };
 		649E1C4D1E4C641B006CF0CE /* SimpleTableView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SimpleTableView.storyboard; sourceTree = "<group>"; };
+		64B32C731E6D535000512850 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Location.storyboard; sourceTree = "<group>"; };
+		64B32C761E6D548200512850 /* LocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
 		64F0FC4F1E56C4A60032A162 /* TableViewWithEditingCommands.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TableViewWithEditingCommands.storyboard; sourceTree = "<group>"; };
 		64F0FC521E56C4E20032A162 /* TableViewWithEditingCommandsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewWithEditingCommandsController.swift; sourceTree = "<group>"; };
 		64F0FC541E56C5620032A162 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
@@ -282,6 +286,7 @@
 		649E1C131E4C5D1A006CF0CE /* Practice */ = {
 			isa = PBXGroup;
 			children = (
+				64B32C751E6D535700512850 /* Location */,
 				6449EB3B1E6D3D8C00508428 /* Validation */,
 				6449EB321E6D373600508428 /* Number */,
 				64F0FC511E56C4B60032A162 /* TableViewWithEditingCommands */,
@@ -324,6 +329,15 @@
 				649E1C451E4C6074006CF0CE /* SimpleTableViewController.swift */,
 			);
 			name = SimpleTableView;
+			sourceTree = "<group>";
+		};
+		64B32C751E6D535700512850 /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				64B32C721E6D535000512850 /* Location.storyboard */,
+				64B32C761E6D548200512850 /* LocationViewController.swift */,
+			);
+			name = Location;
 			sourceTree = "<group>";
 		};
 		64F0FC511E56C4B60032A162 /* TableViewWithEditingCommands */ = {
@@ -471,6 +485,7 @@
 				6449EB311E6D371900508428 /* Number.storyboard in Resources */,
 				649E1C1F1E4C5D1A006CF0CE /* LaunchScreen.storyboard in Resources */,
 				644227401E5436CE007D47E5 /* PartialUpdates.storyboard in Resources */,
+				64B32C741E6D535000512850 /* Location.storyboard in Resources */,
 				649E1C1C1E4C5D1A006CF0CE /* Assets.xcassets in Resources */,
 				649E1C4E1E4C641B006CF0CE /* SimpleTableView.storyboard in Resources */,
 				649E1C4C1E4C63D4006CF0CE /* SimpleTableViewSectioned.storyboard in Resources */,
@@ -568,6 +583,7 @@
 				6415016E1E52D96600FBC362 /* FloatingPointType+IdentifiableType.swift in Sources */,
 				6442274A1E544002007D47E5 /* Randomizer.swift in Sources */,
 				644227481E543D7A007D47E5 /* PseudoRandomGenerator.swift in Sources */,
+				64B32C771E6D548200512850 /* LocationViewController.swift in Sources */,
 				6415016C1E52D96600FBC362 /* DataSources.swift in Sources */,
 				641501761E52D96600FBC362 /* String+IdentifiableType.swift in Sources */,
 				6415017B1E52D96600FBC362 /* RxTableViewSectionedAnimatedDataSource.swift in Sources */,
@@ -645,6 +661,14 @@
 				649E1C1E1E4C5D1A006CF0CE /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		64B32C721E6D535000512850 /* Location.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				64B32C731E6D535000512850 /* Base */,
+			);
+			name = Location.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -749,6 +773,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Practice/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = asasdasasd.Practice;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -762,6 +787,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Practice/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = asasdasasd.Practice;
 				PRODUCT_NAME = "$(TARGET_NAME)";
