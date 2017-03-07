@@ -36,6 +36,10 @@
 		6415017F1E52DE5500FBC362 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6415017E1E52DE5500FBC362 /* ViewController.swift */; };
 		641D34301E6E8A4E00951F14 /* ImagePicker.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 641D342E1E6E8A4E00951F14 /* ImagePicker.storyboard */; };
 		641D34331E6E8A6F00951F14 /* ImagePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 641D34321E6E8A6F00951F14 /* ImagePickerViewController.swift */; };
+		641D34361E6E905F00951F14 /* GithubSignup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 641D34341E6E905F00951F14 /* GithubSignup.storyboard */; };
+		641D34391E6E908100951F14 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 641D34381E6E908100951F14 /* SignUpViewController.swift */; };
+		641D343B1E6E95C500951F14 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 641D343A1E6E95C500951F14 /* Protocols.swift */; };
+		641D343D1E6E98D600951F14 /* DefaultImplementations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 641D343C1E6E98D600951F14 /* DefaultImplementations.swift */; };
 		644227401E5436CE007D47E5 /* PartialUpdates.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6442273E1E5436CE007D47E5 /* PartialUpdates.storyboard */; };
 		644227421E5439A1007D47E5 /* NumberSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 644227411E5439A1007D47E5 /* NumberSectionView.swift */; };
 		644227441E543AF1007D47E5 /* NumberCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 644227431E543AF1007D47E5 /* NumberCell.swift */; };
@@ -114,6 +118,10 @@
 		6415017E1E52DE5500FBC362 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		641D342F1E6E8A4E00951F14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/ImagePicker.storyboard; sourceTree = "<group>"; };
 		641D34321E6E8A6F00951F14 /* ImagePickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePickerViewController.swift; sourceTree = "<group>"; };
+		641D34351E6E905F00951F14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/GithubSignup.storyboard; sourceTree = "<group>"; };
+		641D34381E6E908100951F14 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		641D343A1E6E95C500951F14 /* Protocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
+		641D343C1E6E98D600951F14 /* DefaultImplementations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultImplementations.swift; sourceTree = "<group>"; };
 		6442273F1E5436CE007D47E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/PartialUpdates.storyboard; sourceTree = "<group>"; };
 		644227411E5439A1007D47E5 /* NumberSectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberSectionView.swift; sourceTree = "<group>"; };
 		644227431E543AF1007D47E5 /* NumberCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberCell.swift; sourceTree = "<group>"; };
@@ -243,6 +251,17 @@
 			name = ImagePicker;
 			sourceTree = "<group>";
 		};
+		641D34371E6E906B00951F14 /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				641D34341E6E905F00951F14 /* GithubSignup.storyboard */,
+				641D34381E6E908100951F14 /* SignUpViewController.swift */,
+				641D343A1E6E95C500951F14 /* Protocols.swift */,
+				641D343C1E6E98D600951F14 /* DefaultImplementations.swift */,
+			);
+			name = SignUp;
+			sourceTree = "<group>";
+		};
 		6442273D1E5435D3007D47E5 /* TableViewPartialUpdates */ = {
 			isa = PBXGroup;
 			children = (
@@ -299,6 +318,7 @@
 		649E1C131E4C5D1A006CF0CE /* Practice */ = {
 			isa = PBXGroup;
 			children = (
+				641D34371E6E906B00951F14 /* SignUp */,
 				641D34311E6E8A5700951F14 /* ImagePicker */,
 				64B32C751E6D535700512850 /* Location */,
 				6449EB3B1E6D3D8C00508428 /* Validation */,
@@ -497,6 +517,7 @@
 				64F0FC501E56C4A60032A162 /* TableViewWithEditingCommands.storyboard in Resources */,
 				6449EB3A1E6D3D8500508428 /* Validation.storyboard in Resources */,
 				6449EB311E6D371900508428 /* Number.storyboard in Resources */,
+				641D34361E6E905F00951F14 /* GithubSignup.storyboard in Resources */,
 				649E1C1F1E4C5D1A006CF0CE /* LaunchScreen.storyboard in Resources */,
 				644227401E5436CE007D47E5 /* PartialUpdates.storyboard in Resources */,
 				64B32C741E6D535000512850 /* Location.storyboard in Resources */,
@@ -599,6 +620,7 @@
 				6415016E1E52D96600FBC362 /* FloatingPointType+IdentifiableType.swift in Sources */,
 				6442274A1E544002007D47E5 /* Randomizer.swift in Sources */,
 				644227481E543D7A007D47E5 /* PseudoRandomGenerator.swift in Sources */,
+				641D34391E6E908100951F14 /* SignUpViewController.swift in Sources */,
 				64B32C771E6D548200512850 /* LocationViewController.swift in Sources */,
 				6415016C1E52D96600FBC362 /* DataSources.swift in Sources */,
 				641501761E52D96600FBC362 /* String+IdentifiableType.swift in Sources */,
@@ -606,6 +628,7 @@
 				641501701E52D96600FBC362 /* IdentifiableValue.swift in Sources */,
 				64F0FC571E56C6DE0032A162 /* User.swift in Sources */,
 				6415017C1E52D96600FBC362 /* RxTableViewSectionedReloadDataSource.swift in Sources */,
+				641D343B1E6E95C500951F14 /* Protocols.swift in Sources */,
 				6415017F1E52DE5500FBC362 /* ViewController.swift in Sources */,
 				641501691E52D96600FBC362 /* Array+Extensions.swift in Sources */,
 				641501771E52D96600FBC362 /* TableViewSectionedDataSource.swift in Sources */,
@@ -618,6 +641,7 @@
 				644227461E543B6E007D47E5 /* PartialUpdatesViewController.swift in Sources */,
 				641501661E52D96600FBC362 /* AnimatableSectionModelType+ItemPath.swift in Sources */,
 				641501721E52D96600FBC362 /* ItemPath.swift in Sources */,
+				641D343D1E6E98D600951F14 /* DefaultImplementations.swift in Sources */,
 				6415016A1E52D96600FBC362 /* Changeset.swift in Sources */,
 				644227421E5439A1007D47E5 /* NumberSectionView.swift in Sources */,
 			);
@@ -661,6 +685,14 @@
 				641D342F1E6E8A4E00951F14 /* Base */,
 			);
 			name = ImagePicker.storyboard;
+			sourceTree = "<group>";
+		};
+		641D34341E6E905F00951F14 /* GithubSignup.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				641D34351E6E905F00951F14 /* Base */,
+			);
+			name = GithubSignup.storyboard;
 			sourceTree = "<group>";
 		};
 		6442273E1E5436CE007D47E5 /* PartialUpdates.storyboard */ = {
