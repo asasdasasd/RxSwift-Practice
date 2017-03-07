@@ -34,6 +34,8 @@
 		6415017C1E52D96600FBC362 /* RxTableViewSectionedReloadDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 641501631E52D96600FBC362 /* RxTableViewSectionedReloadDataSource.swift */; };
 		6415017D1E52D96600FBC362 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 641501641E52D96600FBC362 /* README.md */; };
 		6415017F1E52DE5500FBC362 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6415017E1E52DE5500FBC362 /* ViewController.swift */; };
+		641D34301E6E8A4E00951F14 /* ImagePicker.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 641D342E1E6E8A4E00951F14 /* ImagePicker.storyboard */; };
+		641D34331E6E8A6F00951F14 /* ImagePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 641D34321E6E8A6F00951F14 /* ImagePickerViewController.swift */; };
 		644227401E5436CE007D47E5 /* PartialUpdates.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6442273E1E5436CE007D47E5 /* PartialUpdates.storyboard */; };
 		644227421E5439A1007D47E5 /* NumberSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 644227411E5439A1007D47E5 /* NumberSectionView.swift */; };
 		644227441E543AF1007D47E5 /* NumberCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 644227431E543AF1007D47E5 /* NumberCell.swift */; };
@@ -110,6 +112,8 @@
 		641501631E52D96600FBC362 /* RxTableViewSectionedReloadDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxTableViewSectionedReloadDataSource.swift; sourceTree = "<group>"; };
 		641501641E52D96600FBC362 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		6415017E1E52DE5500FBC362 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		641D342F1E6E8A4E00951F14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/ImagePicker.storyboard; sourceTree = "<group>"; };
+		641D34321E6E8A6F00951F14 /* ImagePickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePickerViewController.swift; sourceTree = "<group>"; };
 		6442273F1E5436CE007D47E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/PartialUpdates.storyboard; sourceTree = "<group>"; };
 		644227411E5439A1007D47E5 /* NumberSectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberSectionView.swift; sourceTree = "<group>"; };
 		644227431E543AF1007D47E5 /* NumberCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberCell.swift; sourceTree = "<group>"; };
@@ -230,6 +234,15 @@
 			path = "DataSources+Rx";
 			sourceTree = "<group>";
 		};
+		641D34311E6E8A5700951F14 /* ImagePicker */ = {
+			isa = PBXGroup;
+			children = (
+				641D342E1E6E8A4E00951F14 /* ImagePicker.storyboard */,
+				641D34321E6E8A6F00951F14 /* ImagePickerViewController.swift */,
+			);
+			name = ImagePicker;
+			sourceTree = "<group>";
+		};
 		6442273D1E5435D3007D47E5 /* TableViewPartialUpdates */ = {
 			isa = PBXGroup;
 			children = (
@@ -286,6 +299,7 @@
 		649E1C131E4C5D1A006CF0CE /* Practice */ = {
 			isa = PBXGroup;
 			children = (
+				641D34311E6E8A5700951F14 /* ImagePicker */,
 				64B32C751E6D535700512850 /* Location */,
 				6449EB3B1E6D3D8C00508428 /* Validation */,
 				6449EB321E6D373600508428 /* Number */,
@@ -490,6 +504,7 @@
 				649E1C4E1E4C641B006CF0CE /* SimpleTableView.storyboard in Resources */,
 				649E1C4C1E4C63D4006CF0CE /* SimpleTableViewSectioned.storyboard in Resources */,
 				649E1C1A1E4C5D1A006CF0CE /* Main.storyboard in Resources */,
+				641D34301E6E8A4E00951F14 /* ImagePicker.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -562,6 +577,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				641D34331E6E8A6F00951F14 /* ImagePickerViewController.swift in Sources */,
 				6415016B1E52D96600FBC362 /* CollectionViewSectionedDataSource.swift in Sources */,
 				6449EB341E6D376D00508428 /* NumbersViewController.swift in Sources */,
 				6415017A1E52D96600FBC362 /* RxCollectionViewSectionedReloadDataSource.swift in Sources */,
@@ -639,6 +655,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		641D342E1E6E8A4E00951F14 /* ImagePicker.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				641D342F1E6E8A4E00951F14 /* Base */,
+			);
+			name = ImagePicker.storyboard;
+			sourceTree = "<group>";
+		};
 		6442273E1E5436CE007D47E5 /* PartialUpdates.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
