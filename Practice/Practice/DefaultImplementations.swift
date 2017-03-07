@@ -76,7 +76,33 @@ class GitHubDefaultValidationService: GitHubValidationService {
                     return .failed(message: "Username already taken")
                 }
             })
+            .startWith(loadingValue)
         
+    }
+    
+    func validatePassword(_ password: String) -> ValidationResult {
+        let numberOfCharacters = password.characters.count
+        if numberOfCharacters == 0{
+            return .empty
+        }
+        
+        if numberOfCharacters < minPasswordCount {
+            return .failed(message: "Password must be at least \(minPasswordCount) characters")
+        }
+        
+        return .ok(message: "Password acceptable")
+    }
+    
+    func validateRepeatedPassword(_ password: String, repeatedPassword: String) -> ValidationResult {
+        if repeatedPassword.characters.count == 0 {
+            return .empty
+        }
+        
+        if repeatedPassword == password {
+            return .ok(message: "Password repeated")
+        } else {
+            return .failed(message: "Password different")
+        }
     }
     
 }
