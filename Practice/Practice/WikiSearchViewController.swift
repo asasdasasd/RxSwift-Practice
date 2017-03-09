@@ -1,33 +1,20 @@
 //
-//  SignUpViewController.swift
+//  WikiSearchViewController.swift
 //  Practice
 //
-//  Created by shen on 2017/3/7.
+//  Created by shen on 2017/3/8.
 //  Copyright © 2017年 asasdasasd. All rights reserved.
 //
 
 import UIKit
-import RxSwift
-import RxCocoa
 
-class SignUpViewController: ViewController {
-    @IBOutlet weak var username: UITextField!
+class WikiSearchViewController: ViewController {
+    @IBOutlet weak var searchBar: UISearchBar!
 
-    @IBOutlet weak var password: UITextField!
-   
-    @IBOutlet weak var passwordrepeat: UITextField!
- 
-    
-    @IBOutlet weak var usernamevalidation: UILabel!
-    
-    @IBOutlet weak var passwordvalidation: UILabel!
-    
-    @IBOutlet weak var passwordrepeatvalidation: UILabel!
-    @IBOutlet weak var signup: UIButton!
-    
-    @IBOutlet weak var indecatior: UIActivityIndicatorView!
+    @IBOutlet weak var resultTableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         
     }
 
@@ -48,4 +35,3 @@ class SignUpViewController: ViewController {
     */
 
 }
-

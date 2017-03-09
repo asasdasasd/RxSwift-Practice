@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="7CT-fB-BN4">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Search Wikipedia-->
+        <scene sceneID="WCf-f5-LDV">
+            <objects>
+                <viewController id="7CT-fB-BN4" customClass="WikiSearchViewController" customModule="Practice" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="yuY-dD-mqz"/>
+                        <viewControllerLayoutGuide type="bottom" id="zWF-Oe-eQI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Th3-SY-f1a">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="i2K-pV-Nxl">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="4e0-Lj-07P">
+                                <rect key="frame" x="0.0" y="64" width="375" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="7Z2-rt-wFv"/>
+                                </constraints>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="i2K-pV-Nxl" firstAttribute="top" secondItem="yuY-dD-mqz" secondAttribute="bottom" id="1f9-gH-cpo"/>
+                            <constraint firstItem="i2K-pV-Nxl" firstAttribute="leading" secondItem="Th3-SY-f1a" secondAttribute="leading" id="FIt-VC-oOt"/>
+                            <constraint firstAttribute="trailing" secondItem="i2K-pV-Nxl" secondAttribute="trailing" id="IK7-iO-Sf0"/>
+                            <constraint firstItem="4e0-Lj-07P" firstAttribute="leading" secondItem="Th3-SY-f1a" secondAttribute="leading" id="KtU-Rx-Bb7"/>
+                            <constraint firstAttribute="trailing" secondItem="4e0-Lj-07P" secondAttribute="trailing" id="bGJ-im-Kcg"/>
+                            <constraint firstItem="4e0-Lj-07P" firstAttribute="top" secondItem="yuY-dD-mqz" secondAttribute="bottom" id="cOD-gl-Rjk"/>
+                            <constraint firstItem="zWF-Oe-eQI" firstAttribute="top" secondItem="i2K-pV-Nxl" secondAttribute="bottom" id="vjV-xR-gcw"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Search Wikipedia" id="wzg-WH-9hl"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="resultTableView" destination="i2K-pV-Nxl" id="zm7-Rp-GO2"/>
+                        <outlet property="searchBar" destination="4e0-Lj-07P" id="s8d-1q-dd4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="m44-W0-sop" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1874" y="183"/>
+        </scene>
+    </scenes>
+</document>
